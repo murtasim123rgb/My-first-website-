@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admission Form - BIT Adilpur</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background-color: #e9f2fb;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background: linear-gradient(135deg,#0a4473,#1574c1);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    header img {
+        width: 150px;
+        border-radius: 50%;
+        box-shadow: 0 0 20px white;
+    }
+
+    marquee {
+        background-color: #0b4c77;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 0;
+    }
+
+    main {
+        max-width: 900px;
+        margin: 40px auto;
+        background: white;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #0b4c77;
+        text-align: center;
+    }
+
+    fieldset {
+        border: 2px solid #0b4c77;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+
+    legend {
+        color: #0b4c77;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    input[type=text], input[type=email], input[type=tel], input[type=date], select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    input[type=radio] {
+        margin-right: 5px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    table, th, td {
+        border: 1px solid #0b4c77;
+    }
+
+    th {
+        background-color: #f4f9ff;
+        color: #0b4c77;
+        padding: 10px;
+    }
+
+    td {
+        padding: 8px;
+        text-align: center;
+    }
+
+    button {
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .submit-btn {
+        background-color: #0b4c77;
+        color: white;
+    }
+
+    .reset-btn {
+        background-color: #999;
+        color: white;
+        margin-left: 10px;
+    }
+
+    footer {
+        background-color: #0a4473;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+    <img src="bitlogo.jpg" alt="BIT Logo">
+    <h1>📝 Admission Form - Bismillah Institute of Technology, Adilpur</h1>
+    <p>Please fill in all required fields carefully before submitting.</p>
+</header>
+
+<marquee>🎓 New Admissions Open — Join BIT Adilpur Today! Learn, Grow & Build Your Career in Technology.</marquee>
+
+<main>
+    <h2>📋 Student Admission Form</h2>
+    <form action="https://formsubmit.co/bitcenter@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Student Admission Form Submission">
+        <input type="hidden" name="_template" value="table">
+
+        <fieldset>
+            <legend>👤 Student Information</legend>
+            <label>Full Name *</label>
+            <input type="text" placeholder="Enter your full name" required>
+
+            <label>Date of Birth *</label>
+            <input type="date" required>
+
+            <label>Gender *</label>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+
+            <label>CNIC / B-Form No *</label>
+            <input type="text" placeholder="e.g. 41203-1234567-8" required>
+
+            <label>Phone Number *</label>
+            <input type="tel" placeholder="Enter your contact number" required>
+
+            <label>Email Address *</label>
+            <input type="email" placeholder="Enter your email address" required>
+
+            <label>Place of Birth *</label>
+            <input type="text" placeholder="Enter your birth place" required>
+
+            <label>Religion *</label>
+            <input type="text" placeholder="Enter your religion" required>
+
+            <label>Nationality *</label>
+            <input type="text" placeholder="Enter your nationality" required>
+
+            <label>Permanent Address *</label>
+            <textarea rows="3" placeholder="Enter your full home address" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>👨‍👦 Father / Guardian Information</legend>
+            <label>Father / Guardian Name *</label>
+            <input type="text" placeholder="Enter full name" required>
+
+            <label>Occupation *</label>
+            <input type="text" placeholder="e.g. Teacher, Businessman, Farmer" required>
+
+            <label>CNIC *</label>
+            <input type="text" placeholder="Enter CNIC" required>
+
+            <label>Contact Number *</label>
+            <input type="tel" placeholder="Enter contact number" required>
+
+            <label>Relationship *</label>
+            <input type="text" placeholder="e.g. Father, Uncle, Guardian" required>
+
+            <label>Monthly Income (optional)</label>
+            <input type="text" placeholder="Enter monthly income">
+        </fieldset>
+
+        <fieldset>
+            <legend>🎓 Educational Background</legend>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>School / College Name</th>
+                    <th>Board / University</th>
+                    <th>Passing Year</th>
+                    <th>Marks / Grade</th>
+                </tr>
+                <tr>
+                    <td>Matric</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Intermediate</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Bachelor / Other</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>💻 Course Information</legend>
+            <label>Select Course *</label>
+            <select required>
+                <option value="">-- Choose Course --</option>
+                <option>Introduction to IT</option>
+                <option>MS Office Professional</option>
+                <option>Graphic Designing</option>
+                <option>Web Development</option>
+                <option>Hardware & Networking</option>
+                <option>DIT One Year</option>
+                <option>CIT Six Months</option>
+                <option>Corel Draw 6 Months</option>
+                <option>Photoshop 4 Months</option>
+            </select>
+
+            <label>Preferred Batch Time *</label>
+            <select required>
+                <option value="">-- Choose Batch --</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+            </select>
+
+            <label>Upload Passport Size Photo *</label>
+            <input type="file" accept="image/*" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>📜 Declaration</legend>
+            <p>I hereby declare that all the information provided above is true and correct. I understand that any false information may lead to the cancellation of my admission.</p>
+            <input type="checkbox" required> I agree with the above declaration.
+        </fieldset>
+
+        <div style="text-align:center; margin-top:20px;">
+            <button type="submit" class="submit-btn">🚀 Submit Application</button>
+            <button type="reset" class="reset-btn">❌ Reset Form</button>
+        </div>
+
+    </form>
+</main>
+
+<footer>
+    © 2025 Bismillah Institute of Technology, Adilpur. Designed by <b>Sir Abdul Haseeb Solangi</b>.
+</footer>
+
+</body>
+</html>
